@@ -1,0 +1,515 @@
+/*---------------------------- GENERAL -----------------------------*/
+
+body {
+  background: url(images/bg-pattern.jpg) repeat;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  min-width: 940px;
+  padding: 0;
+}
+
+a {
+  outline: none;
+}
+
+img {
+  border: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+p {
+  line-height: 24px;
+  margin: 0;
+}
+
+p a,
+#corps div#contenu div.rubrique div span a {
+  color: #736e5f;
+}
+
+p a:hover,
+footer div div.fin div a:hover,
+#corps div#contenu ul li h2 a:hover,
+#corps div#contenu div.rubrique ul li p a.readmore:hover,
+#corps div#contenu div#home div.coteDroit ul li p a.readmore:hover,
+#corps div#contenu div.rubrique ul li h2 a:hover,
+#corps div#contenu div.rubrique div span a:hover {
+  color: #898066;
+}
+
+/*---------------------------- HAUT DE PAGE -----------------------------*/
+
+header {
+  background: url(images/bg-pattern.jpg) repeat;
+  border-bottom: 2px solid #ffffff;
+  height: 139px;
+}
+
+header div {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 0 0 10px;
+  width: 1200px;  /* Déplacer logo*/
+}
+
+header div a#logo { /* Permet de mettre les intitulé du menus à droite du logo */
+  display: block;
+  float: left;
+  padding: 17px 0 0;
+}
+
+header div ul { /* Eloigner les intitulés du menu à droite */
+  float: right;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+header div ul li {  /* Séparer chaque intitulé du menu par une ligne verticale */
+  border-left: 1px solid #ffffff;
+  float: left;
+  height: 103px;
+  padding: 0 20px;
+}
+
+header div ul li:first-child{
+  border: none;
+}
+
+header div ul li a {
+  color: #336699;
+  font-family: Georgia, "Times New Roman", Times,serif;
+  font-size: 18px;
+  letter-spacing: 0.075em;
+  line-height: 129px;  /*hauteur du menu entre les lignes */
+  text-decoration: none;
+}
+
+header div ul li.courante a,
+header div ul li a:hover {  /* Colorer plus claire la page accuelle et colorer l'insitulé du menu sur lequel on passe la souris */
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 0 0 3px;
+}
+
+header div ul li a:hover {  /* Enlever le surlignement quand on survole le menu */
+  border-bottom: none;
+}
+/*---------------------------- BODY -----------------------------*/
+
+#corps {
+/*  background: url(images/bg-content.jpg) repeat-x;*/
+  /*border-bottom: 5px solid #FF0066;*/
+  width: 100%;
+}
+
+/*---------------------------- PIED DE PAGE -----------------------------*/
+
+footer { /* centrer dans la page */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 920px;
+
+}
+
+footer div {
+  overflow: hidden;
+  padding: 40px 0 0;
+}
+
+footer div div.debut {  /* choisir de mettre la section PLUS a gauche */
+  float: left;
+  padding: 0;
+  width: 590px;
+}
+
+footer div div.debut p {
+  letter-spacing: 0.05em;
+	text-align: justify;
+}
+
+footer div div.fin { /*mettre reseau sociaux à droite */
+  float: right;
+  padding: 0;
+  width: 295px;
+}
+
+footer div div.fin div {  /* reduire marge du bas */
+  	padding: 5px 0 15px;
+}
+
+footer div div.fin div a { /*on enleve la lien fb en mot pour ensuite remplacer par un icon*/
+  color: #736e5f;
+	display: block;
+	float: left;
+	height: 26px;
+	text-indent: -99999px;
+	text-transform: lowercase;
+}
+
+footer div div.fin div a#facebook {  /* ico fb */
+  background: url(images/icons.png) no-repeat;
+  height: 25px;
+  width: 25px;
+}
+
+footer div div.fin div a#facebook:hover {
+  background: url(images/icons.png) no-repeat -25px 0;
+}
+
+footer p.note {
+  color: #1a1918;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.075em;
+  line-height: 45px;
+  text-align: center;
+}
+
+
+/*----------------------PAGE-CONTAINER ------------------------*/
+
+#page { /* marge pour décaler du header*/
+	overflow: hidden;
+	padding: 20px 20px 40px 20px;
+}
+
+#page h1, h2, h3 {
+  margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+#page p, ul, ol {
+  margin-top: 0;
+  line-height: 180%; /*espace entre les lignes */
+}
+
+#page a {
+  text-decoration: none;
+	color: #336699;
+}
+
+#page a:hover {
+}
+
+.container {
+	width: 1200px;
+	margin: 0px auto;
+}
+
+#content {
+	float: right;;
+	width: 752px;
+	padding: 0px 0px 0px 0px;
+}
+
+.post {
+	overflow: hidden;
+}
+
+.post .title { /*titre du texte droite*/
+	margin: 0px 0px 30px 0px;
+	padding: 0px 0px 10px 0px;
+	border-bottom: 3px solid #E0E1D6;
+	text-shadow: 1px 1px 0px #FFFFFF;
+	font-size: 26px;
+	color: #373737;
+}
+
+.post .entry { /*texte droite en justifié */
+	padding: 0px 0px 20px 0px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+/*------------------------------ SIDEBARD ------------------------------*/
+
+#sidebar {
+	float: left;;
+	width: 384px;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	color: #ffffff;
+}
+
+#sidebar h2 { /*titre du menu */
+	margin: 0px 0px 30px 0px;
+	padding: 0px 0px 10px 0px;
+	border-bottom: 3px solid #E0E1D6;
+	text-shadow: 1px 1px 0px #FFFFFF;
+	font-size: 26px;
+	color: #373737;
+}
+
+#sidebar a {
+	border: none;
+}
+
+#sidebar a:hover {
+	text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.list-style2 { /*enlever les puces*/
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.list-style2 li {
+	padding: 7px 0px 7px 0px;
+	border-top: 1px solid #E0E1D6;
+}
+
+.list-style2 .first { /*enlever la ligne du haut */
+	padding-top: 10px;
+	border-top: none;
+/*	background: none;*/
+}
+
+/*.list-style2 li a {
+	color: #CC6633;
+}*/    /* je voudrais mettre la page encours en couleur meme principe que le menu mais ça marche pas, j'ai mis ça en test et même ça ça marche pas...*/
+
+.list-style2 #encours a {
+ font-weight: bold;
+ 	font-size: 24px;
+}
+
+
+
+/*------------------------------ 3BOX ------------------------------*/
+
+#threebox { /*aligner comme le menu*/
+	overflow: hidden;
+	padding: 10px 0px 50px 0px;
+}
+
+#threebox #box1 {
+	float: left;
+	width: 384px;
+	margin-right: 20px;
+}
+
+#threebox #box2 {
+	float: left;
+	width: 384px;
+}
+
+#threebox #box3 {
+	float: right;
+	width: 384px;
+}
+
+.box-style {
+	background: #191919;
+}
+
+.box-style h2 {
+	padding: 10px 0px;
+	letter-spacing: -1px;
+	font-size: 28px;
+	color: #FFFFFF;
+}
+
+.box-style .image { /*aligner les 3 images*/
+	width: 324px;
+}
+
+.box-style .content { /* centrer dans le cadre*/
+	overflow: hidden;
+	width: 324px;
+	padding: 30px;
+}
+
+
+/*------------------------------TITRE ------------------------------*/
+/*#corps div#featured {
+  margin: 0 auto;
+  min-height: 69px;
+  overflow: hidden;
+  padding: 10px 10px 0;
+  width: 930px;
+}
+
+
+#corps div#featured h3 {
+  color: #336699;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 26px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  line-height: 48px;
+  padding: 42px 0;
+  margin: 0;
+}*/
+
+
+/*---------------------------- ABOUT -----------------------------*/
+
+
+/*#corps div#contenu {
+  overflow: hidden;
+	margin: 20px auto 40px;
+	width: 960px;
+}
+
+#corps div#contenu div {
+  background: #88A6FF;
+  border: 1px solid ##88A6FF;
+  padding: 0 25px 25px;
+  width: 906px;
+}
+
+#corps div#contenu div h2 { /*titre*/
+/*  color: #000033;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 25px;
+	letter-spacing: 0.025em;
+	line-height: 40px;
+	margin: 0;
+	padding: 20px 0;
+}
+
+#corps div#contenu div h3,
+#corps div#contenu div span {  /* Titre sous la photo*/
+  /*color: #CC6633;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	line-height: 24px;
+	margin: 0;
+	text-transform: uppercase;
+}/*
+
+#corps div#contenu div span { /* Permet de mettre le texte de la balise span en dessous*/
+  /*	display: block;
+}
+
+#corps div#contenu div p {
+  margin: 0 0 25px;
+}
+
+#corps div#contenu div div {
+  background: none;
+  border: 0;
+  margin: 20px 0 0;
+  padding: 0;
+  width: auto;
+}
+
+#corps div#contenu div div ul {
+  margin: 0;
+  padding: 5px 0 0 20px;
+}
+
+#corps div#contenu div div ul li {
+  letter-spacing: 0.05em;
+  line-height: 24px;
+  margin: 20px 0;
+}
+
+
+#corps div#contenu div#about h2 {
+  	padding: 20px 0 13px;
+}
+
+#corps div#contenu div#about { /*bordure bleu*/
+/*  background: #fff url(images/border_projet2.jpg) repeat-y left top;
+  overflow: hidden;
+  width: 910px;
+  background-color: black;
+}
+
+#corps div#contenu div#about ul { /*enlever les puces*/
+  /*float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 195px;
+}
+
+#corps div#contenu div#about ul li {
+  border-top: 1px solid #000033;
+  padding: 5px 0;
+}
+
+#corps div#contenu div#about ul li:first-child {
+  	border: 0;
+}
+
+#corps div#contenu div#about ul li a { /*enlever hyperlien*/
+/*  color: #000033;
+  display: block;
+  letter-spacing: 0.025em;
+  line-height: 25px;
+  padding: 0 0 0 12px;
+  text-decoration: none;
+}
+
+#corps div#contenu div#about ul li a:hover {
+  background: url(images/bullet.png) no-repeat left center;
+  color: #83450e;
+  font-weight: bold;
+}
+
+#corps div#contenu div#about div {
+  float: left;
+  margin: -12px 0 0 110px;
+  width: 553px;
+}
+
+#corps div#contenu div#about div img {
+  border: 1px solid #d6d3c2;
+}
+
+#corps div#contenu div#about div span { /* texte dans span centrée*/
+/*  margin: 10px auto 20px;
+  text-align: center;
+  width: 325px;
+}
+
+#corps div#contenu div#about div p {
+	margin: 0;
+  color: #FFFFFF;
+}
+
+
+
+/*#corps div#contenu div#about {
+margin: 0 auto;
+overflow: hidden;
+padding: 0 10px;
+width: 920px;
+}
+
+#corps div#contenu div#about h3 {
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 16px;
+font-weight: normal;
+letter-spacing: 0.05em;
+line-height: 30px;
+margin: 0;
+padding: 25px 0 0;
+}
+
+#corps div#contenu div#about h3:first-child {
+padding: 5px 0 0;
+}
+
+#corps div#contenu div#about p {
+letter-spacing: 0.05em;
+line-height: 30px;
+text-align: justify;
+}*/

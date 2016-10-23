@@ -1,0 +1,30 @@
+<div id="about">
+          <h3>Naissance d'une passion </h3>
+  				<p>
+            A 2 ans, Tiphanie suit sa soeur à chacun de ses entraînements et l'on découvre très vite qu'elle est attirée par cette petite balle jaune.. Elle ne veut pas rater un seul entraînement et refuse de rester assise sur le banc et commence sérieusement à perturber les cours, une seule chose l'intéresse rejoindre elle aussi le groupe et jouer. Elle pleure régulièrement mais je lui rappelle que pour le moment elle est encore trop petite, Tiphanie n'a que 3 ans .
+  				</p>
+          <p>
+            Son engouement au cours des semaines et des mois qui suivent reste le même : "Moi, je veux jouer avec lui !", pour Tiphanie "lui" c'est l'entraîneur. Lors du dernier cours de sa soeur, je promets à Tiphanie de tout faire pour qu'elle puisse prendre des cours dès la prochaine rentrée, je ne peux plus rester indifférente à son envie de jouer !
+          </p>
+          <p>
+            A 4 ans, elle intègre un groupe de mini-tennis. A partir de cet instant, sa raquette ne la quittera plus que ce soit lors des séances d'entraînement ou à la maison, dès qu'un moment se présente, elle frappe ...
+          </p>
+          <p>
+            A 5 ans, Tiphanie fait la connaissance d'Alejandro nouvel enseignant au sein du club de tennis T2R à Bourg Achard (27). Il nous indique que Tiphanie a un énorme potentiel qui ne demande qu'à s'épanouir et à s'exprimer.
+          </p>
+          <p>
+            Passion, rigueur seront donc les éléments de cette nouvelle collaboration afin que Tiphanie continue de progresser .Détectée par le département, la région puis par la Fédération Française de Tennis , Tiphanie reste depuis chaque année dans les meilleures joueuses françaises de sa catégorie. Elle est sélectionnée pour des stages au Centre National d'Entraînement à Roland Garros et y croise des célébrités de la petite balle jaune .
+          </p>
+          <p>
+            Tiphanie concilie à l'heure actuelle sa passion pour le tennis et sa scolarité par correspondance avec le CNED (en 3ème cette année) sans encombre. Ce choix s'est imposé pour lui permettre de jouer au niveau européen et de s'entraîner en Espagne. Cette année, son entraîneur est parti vivre en Espagne. Notre cellule a dû évoluée car Tiphanie n'a pas voulu changer d'entraîneur. Leur entente parfaite est un facteur indispensable dans cette réussite. Il lui apprend chaque jour les valeurs d'une sportive : détermination, humilité, combativité, générosité et résistance à l'effort !
+          </p>
+          <p>
+            Au Championnat de France 2014 contre toute attente,  Tiphanie sort la tête de série n°2. Un bonheur n'arrive jamais seul ! Demi finaliste au championnat, Tiphanie gagne son ticket pour disputer la coupe d'Europe en intégrant l'équipe de France pour la 1ère fois.
+          </p>
+          <p>
+            Grâce au travail mis en place tout au long de ces années, les victoires d'aujourd'hui sont plus que méritées car un énorme travail de fond a été effectué en amont, nul doute qu'elles continueront dans les mois et les années à venir, nous mettrons tout en oeuvre pour cela.
+          </p>
+          <p>
+            Ce rêve d'enfant qui est devenu son objectif de tous les jours, ne pourra grandir que si nous trouvons des financements supplémentaires car nos salaires ne pourront pas tout couvrir. Elle a notre soutient et elle espère avoir le vôtre.
+          </p>
+        </div>
