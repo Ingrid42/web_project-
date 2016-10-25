@@ -1,0 +1,182 @@
+.grid {   /*la grid c'est l'ensemble des figures de la galery */
+  position: relative;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+.grid figure {   /* on met 3 figure par lignes */
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0;
+  width: 33.3333333%;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.grid figure img {  /* on oblige chaque image a s'afficher en entier sans se couper */
+  position: relative;
+  display: block;
+  max-width: 102%;
+  opacity: 1;
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color:#990066;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,  /* affiche la légende dans l'image en prenant 100% la place */
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {   /* mettre les titre de each rubrique en gras */
+	word-spacing: -0.15em;
+	font-weight: 700;
+}
+
+.grid figure h2,  /* supprime la marge entre titre et légende */
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p { /* reéduit la taille du paragraphe de la légende */
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Preferences :
+- romeo
+- sadie
+- milo
+- oscar
+*/
+
+/* THEME : Romeo */
+
+figure.effect-romeo {
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+}
+
+figure.effect-romeo img { /* on recadre la photo en "zoomant" */
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,0,300px);
+	transform: translate3d(0,0,300px);
+}
+
+figure.effect-romeo:hover img { /* quand on passe la souris sur une image, elle reprend sa taille normale et est voilé d'un fond semi opaque blanc */
+	opacity: 0.6;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-romeo figcaption::before, /* ajout des deux barres supperposés */
+figure.effect-romeo figcaption::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	height: 1px;
+	background: #990066;
+  opacity: 0.7;
+	content: '';
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+figure.effect-romeo:hover figcaption::before { /* on fait faire une rotation à l'une des barres */
+	opacity: 0.15;
+	-webkit-transform: translate3d(-50%,-50%,0) rotate(45deg);
+	transform: translate3d(-50%,-50%,0) rotate(45deg);
+}
+
+
+figure.effect-romeo:hover figcaption::after { /*rotation opposé à l'autre barre */
+	opacity: 0.15;
+	-webkit-transform: translate3d(-50%,-50%,0) rotate(-45deg);
+	transform: translate3d(-50%,-50%,0) rotate(-45deg);
+}
+
+figure.effect-romeo h2, /* on reposition le titre et le paragraphe de la légende */
+figure.effect-romeo p {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-romeo h2 { /* on remonte le titre par translation */
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
+}
+
+figure.effect-romeo p { /* on place le paragraphe au bas de l'image */
+	padding: 0.25em 2em;
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+	transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+}
+
+figure.effect-romeo:hover h2 { /* quand on passe la sourie sur l'image, le titre translate un peu vers le bas */
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+}
+
+figure.effect-romeo:hover p { /* quand on passe la sourie sur l'image, la paragraphe translate un peu vers le haut */
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,100%,0);
+	transform: translate3d(0,-50%,0) translate3d(0,100%,0);
+}
+
+
+@media screen and (max-width: 50em) { /* si la fenetre s'ouvre sur une demi fenetre on ne place que deux figure par lignes */
+	.content {
+		padding: 0 10px;
+		text-align: center;
+	}
+	.grid figure {
+		width: 50%;
+	}
+}
+
+@media (max-width: 639px) { /* a partir de cette résolution une seule figure par ligne */
+	.grid figure {width: 100%;}
+}
+
+
+
+
+
+
+
+
+/* z */
