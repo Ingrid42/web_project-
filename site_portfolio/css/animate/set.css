@@ -108,10 +108,15 @@ figure.effect-sarah figcaption {
 figure.effect-sarah h2 {
 	position: relative;
 	overflow: hidden;
-	padding: 0.5em 0;
+	padding: 0;
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 100%;
+  /*background-color: rgba(255, 255, 255, 0.5)*/
 }
 
-figure.effect-sarah h2::after {
+figure.effect-sarah h2::after {  /* barre blanch */
 	position: absolute;
 	bottom: 0;
 	left: 0;

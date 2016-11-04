@@ -8,9 +8,25 @@ $('#section1').on("click",function () {
 
 
   function secONE() {
-   $('a#boucle1').attr("href","images/tableaux/1Paysage/1.jpg");
-   $('a#boucle1').after('<a href="images/tableaux/1Paysage/2.jpg" title="2" data-gallery></a>')
+  //  $('div.reinit').empty();
+   $('span.reinit').append('<a href="images/tableaux/1Paysage/2.jpg" title="2" data-gallery></a>');
+   $('span.reinit').append('<a href="images/tableaux/1Paysage/3.jpg" title="3" data-gallery></a>');
   }
+
+$('#section2').on("click",function () {
+    secTWO();
+  });
+
+
+    function secTWO() {
+     
+     $('span.reinit').append('<a href="images/tableaux/2Indien/2.jpg" title="2" data-gallery></a>');
+     $('span.reinit').append('<a href="images/tableaux/2Indien/3.jpg" title="3" data-gallery></a>');
+    }
+
+
+
+
 
 
 });
