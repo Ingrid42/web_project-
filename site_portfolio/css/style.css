@@ -105,11 +105,12 @@ p {
 }
 
 #works figcaption a { /* Param de 'voir' */
-  border:1px solid #fff;
+  /*border:1px solid #fff;*/
   margin-top: 1em;
   display: inline-block;
-  color: #660000;
+  color: #990066;
   padding: 0 2em;
+  font-weight: bold;
 }
 
 #works figcaption a:hover { /* 'voir' se décale quand on passe la souris dessus */

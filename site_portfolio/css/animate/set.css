@@ -25,7 +25,7 @@
 
 .grid figure figcaption {
   padding: 2em;
-  color:#990066;
+  color:#FFFFFF;
   text-transform: uppercase;
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
@@ -77,84 +77,72 @@
 - oscar
 */
 
-/* THEME : Romeo */
+/* THEME : Sarah */
 
-figure.effect-romeo {
-	-webkit-perspective: 1000px;
-	perspective: 1000px;
+figure.effect-sarah {
+	background: #D8BFD8;
 }
 
-figure.effect-romeo img { /* on recadre la photo en "zoomant" */
+figure.effect-sarah img {
+	max-width: none;
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(0,0,300px);
-	transform: translate3d(0,0,300px);
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
-figure.effect-romeo:hover img { /* quand on passe la souris sur une image, elle reprend sa taille normale et est voilé d'un fond semi opaque blanc */
-	opacity: 0.6;
+figure.effect-sarah:hover img {
+	opacity: 0.4;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 
-figure.effect-romeo figcaption::before, /* ajout des deux barres supperposés */
-figure.effect-romeo figcaption::after {
+figure.effect-sarah figcaption {
+	text-align: left;
+}
+
+figure.effect-sarah h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+
+figure.effect-sarah h2::after {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 80%;
-	height: 1px;
-	background: #990066;
-  opacity: 0.7;
-	content: '';
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
-}
-
-figure.effect-romeo:hover figcaption::before { /* on fait faire une rotation à l'une des barres */
-	opacity: 0.15;
-	-webkit-transform: translate3d(-50%,-50%,0) rotate(45deg);
-	transform: translate3d(-50%,-50%,0) rotate(45deg);
-}
-
-
-figure.effect-romeo:hover figcaption::after { /*rotation opposé à l'autre barre */
-	opacity: 0.15;
-	-webkit-transform: translate3d(-50%,-50%,0) rotate(-45deg);
-	transform: translate3d(-50%,-50%,0) rotate(-45deg);
-}
-
-figure.effect-romeo h2, /* on reposition le titre et le paragraphe de la légende */
-figure.effect-romeo p {
-	position: absolute;
-	top: 50%;
+	bottom: 0;
 	left: 0;
 	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
 }
 
-figure.effect-romeo h2 { /* on remonte le titre par translation */
-	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
-	transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
+figure.effect-sarah:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
 
-figure.effect-romeo p { /* on place le paragraphe au bas de l'image */
-	padding: 0.25em 2em;
-	-webkit-transform: translate3d(0,-50%,0) translate3d(0,150%,0);
-	transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+figure.effect-sarah p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
 }
 
-figure.effect-romeo:hover h2 { /* quand on passe la sourie sur l'image, le titre translate un peu vers le bas */
-	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
-	transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
-}
-
-figure.effect-romeo:hover p { /* quand on passe la sourie sur l'image, la paragraphe translate un peu vers le haut */
-	-webkit-transform: translate3d(0,-50%,0) translate3d(0,100%,0);
-	transform: translate3d(0,-50%,0) translate3d(0,100%,0);
+figure.effect-sarah:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
 
 

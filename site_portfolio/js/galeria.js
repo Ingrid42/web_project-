@@ -8,8 +8,8 @@ $('#section1').on("click",function () {
 
 
   function secONE() {
-   $('a#boucle1').attr("href","images/type1/1.jpg");
-   $('a#boucle1').after('<a href="images/type1/2.jpg" title="2" data-gallery></a>')
+   $('a#boucle1').attr("href","images/tableaux/1Paysage/1.jpg");
+   $('a#boucle1').after('<a href="images/tableaux/1Paysage/2.jpg" title="2" data-gallery></a>')
   }
 
 
